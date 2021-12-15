@@ -17,6 +17,33 @@ export const Div = styled.div`
   flex-wrap: wrap;
   border-radius: ${({ bRadius }) => bRadius || '0'};
   justify-content: center;
+  box-shadow: ${({ bShadow }) => bShadow || '0px 0px 15px 0px rgba(0,0,0,0.75)'};
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items:center;
+`
+export const DivError = styled.div`
+  background-color: ${({ bgColor }) => bgColor};
+  width: ${({ width }) => width};
+  height: ${({ height }) => height};
+  border: ${({ border }) => border};
+  border-bottom: none;
+  border-right: none;
+  border-top: none;
+  border-color: ${({borderColor }) => borderColor};
+  margin: ${({ margin }) => margin || 'auto'};
+  padding: ${({ padding }) => padding || '0'};
+  color: ${({ color }) => color};
+`
+
+export const Form = styled.form`
+  width: 100%;
+  padding: 5px;
+  margin: 0px;
+  overflow: hidden;
+  display: contents;
+  flex-direction: column;
 `
 
 export const Input = styled.input`
@@ -27,14 +54,13 @@ export const Input = styled.input`
   line-height: 45px;
   padding: 0 10px 0 10px;
   transition: 0.3s ease all;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   margin: ${({ margin }) => margin || 'auto'};
   &:focus {
-    border: 3px solid #58D68D;
+    border: 2px solid #58D68D;
     outline: none;
     box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
-  }
- 
+  } 
 `
 export const H2 = styled.h2`
   color:${({ color }) => color};
@@ -46,15 +72,30 @@ export const Button = styled.button`
   margin : ${({ margin }) => margin || 'auto'};
   font-size: ${({ fSize }) => fSize};
   color: ${({ color }) => color};
-  background-color:${({bgColor }) => bgColor};
+  background-color:${({ bgColor }) => bgColor};
   border-radius: ${({ bRadius }) => bRadius};
   border  :${({ border }) => border || 'none'} ;
+  cursor : ${({ cursor }) => cursor || 'pointer'};
+
   &:hover {
     background-color: #5DADE2;
     }
 `
 export const Span = styled.span`
+  margin: ${({ margin }) => margin || 'auto'};
+  padding: ${({ padding }) => padding || '0'};
   color: ${({ color }) => color};
   font-size: ${({ fSize }) => fSize};
-  cursor : ${({ cursor }) => cursor}
+  cursor : ${({ cursor }) => cursor};
+  border: ${({ border }) => border};
+  border-top: ${({ borderT }) => borderT || 'none'};
+  border-left: ${({ borderL }) => borderL || 'none'};
+  border-right: ${({ borderR }) => borderR || 'none'};
+  border-color:${({ borderColor }) => borderColor};
+`
+export const Hr = styled.hr`
+  color: ${({ color }) => color};
+  width: ${({ width }) => width};
+  padding: 0px;
+  margin: 10px 0px;
 `

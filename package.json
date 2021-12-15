@@ -8,19 +8,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.5.6",
     "@graphql-tools/load-files": "^6.5.2",
     "@graphql-tools/merge": "^8.2.1",
     "apollo-server-core": "^3.5.0",
     "apollo-server-micro": "^3.5.0",
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
+    "formik": "^2.2.9",
     "jsonwebtoken": "^8.5.1",
     "micro-cors": "^0.1.1",
     "mongoose": "^5.9.7",
     "next": "12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.3",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^2.0.2",
