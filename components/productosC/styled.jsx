@@ -34,6 +34,7 @@ export const Th = styled.th`
   text-align: left;
   background-color: #04AA6D;
   color: white;
+  text-align: center;
 `
 
 export const Tr = styled.tr`
@@ -47,6 +48,7 @@ export const Td = styled.td`
   border: 2px solid #ffffff;
   padding: 8px;
   min-width:${({ minwidth }) => minwidth};
+  text-align:${({tAlign}) => tAlign}
 `
 export const Button = styled.button`
   font-size:${({ fSize }) => fSize} ;
