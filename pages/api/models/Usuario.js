@@ -1,6 +1,10 @@
 import mongoose from 'mongoose'
 
 const UsuarioSchema = mongoose.Schema({
+    dni: {
+        type:String,
+        require: true
+    },
     primerNombre: {
         type:String,
         require: true

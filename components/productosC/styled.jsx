@@ -22,8 +22,11 @@ export const Title = styled.h1`
 `
 
 export const Table = styled.table`
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
+  border: 1px solid #dddddd;
+  border-radius: 7px;
+  width: fit-content;
+  overflow-x: auto;
+  background-color: #fafafa;
   width: 100%;
 `
 export const Th = styled.th`
@@ -32,7 +35,7 @@ export const Th = styled.th`
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #04AA6D;
+  background-color: ${({ bgColor }) => bgColor || 'green'};
   color: white;
   text-align: center;
 `
