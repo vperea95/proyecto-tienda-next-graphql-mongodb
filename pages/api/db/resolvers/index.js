@@ -2,7 +2,6 @@
 import ProductoResolver from './Producto'
 import UsuarioResolver from './Usuario'
 
-
 export default {
   
   ...ProductoResolver.TYPES,

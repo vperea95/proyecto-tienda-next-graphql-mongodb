@@ -6,7 +6,7 @@ import Loading from '../loading/loading'
 
 const ProductosC = () => {
     const { data, loading } = useQuery(OBTENER_PRODUCTOS);
-    if (loading) return (<Loading background="green"></Loading>)
+    if (loading) return (<Loading background="blue"></Loading>)
     return (
         <Container>
             <Div jcontent='flex-end' padding='15px' margin='0px 30px 0 30px '>
@@ -16,13 +16,13 @@ const ProductosC = () => {
                 <Table>
                     <thead>
                         <Tr>
-                            <Th>#</Th>
-                            <Th>Nombre</Th>
-                            <Th>Cantidad</Th>
-                            <Th>Codigo</Th>
-                            <Th>Descripcion</Th>
-                            <Th>Precio</Th>
-                            <Th>Acciones</Th>
+                            <Th bgColor = '#179399'>#</Th>
+                            <Th bgColor = '#179399'>Nombre</Th>
+                            <Th bgColor = '#179399'>Cantidad</Th>
+                            <Th bgColor = '#179399'>Codigo</Th>
+                            <Th bgColor = '#179399'>Descripcion</Th>
+                            <Th bgColor = '#179399'>Precio</Th>
+                            <Th bgColor = '#179399'>Acciones</Th>
                         </Tr>
                     </thead>
                     <tbody>
