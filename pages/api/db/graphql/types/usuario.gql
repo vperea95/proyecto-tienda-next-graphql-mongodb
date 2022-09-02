@@ -40,5 +40,7 @@ type Query {
 }
 type Mutation {
     nuevoUsuario(input: UsuarioInput) : Usuario
+    actualizarUsuario( id: ID!, input: Update_UsuarioInput ) : Usuario
+    eliminarUsuario( id: ID! ) : String
     autenticarUsuario(input: AutenticarInput) : Token  
 }
