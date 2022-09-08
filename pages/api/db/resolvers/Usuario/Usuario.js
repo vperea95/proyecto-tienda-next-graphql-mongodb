@@ -12,7 +12,7 @@ export const obtenerUsuarios = async () => {
 
 export const obtenerUsuario = async (_, { dni }) => {
     // revisar si el Usuario existe o no
-    const usuario = await Usuario.findOne({ dni: dni });
+    const usuario = await Usuario.findOne({ token: dni });
 
     if(!usuario) {
         throw new Error('Usuario no encontrado');
